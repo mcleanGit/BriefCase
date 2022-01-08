@@ -1,0 +1,95 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+/* styles overall background and font family */
+body {
+ background-color: lightsteelblue;
+ font-family: Helvetica, Arial, sans-serif;
+}
+/* styles header */
+header {
+ background-color: #000;
+ width: 100%;
+ height: 90px;
+ margin: 0;
+}
+/* styles title-box inside header bar and h1 */
+/* this now appears to be sufficient */
+header h1 {
+ width: 246px;
+ font-size: 42px;
+ color: #000;
+ float: left;
+ text-align: right;
+ text-decoration: none;
+ background-color: teal;
+/* padding around h1 title */
+ padding: 10px 10px 10px 35px;
+ /* margin around h1 title-box */
+ margin: 10px auto 10px 0px;
+}
+
+/* styles contents of header nav bar and a */
+/* several details to improve */
+header nav {
+ float: right;
+ width: 40%;
+ text-align: center;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ margin: 32px 60px 5px auto;
+}
+
+ header nav a {
+ font-size: 28px;
+ font-style: bold;
+ text-decoration-line: underline;
+ color: teal;
+}
+
+/* hero style start */
+.hero {
+ height: 400px;
+ margin-top: 1px;
+ background-size: cover;
+ background-position: center;
+ background-image: url("../images/frequency-hero.jpg");
+}
+
+h3 {
+ float: right;
+ margin: 300px 69px 20px auto;
+ padding: 10px;
+ height: 60px;
+ width: 300px;
+ position: relative;
+ text-align: center;
+ background-color: teal;
+ color: #000;
+ font-size: 32px;
+ font-style: italic;
+}
+
+/* next steps */
+.section-box 
+/* boxes show unequal columns for About Me and Work sections */
+
+/* Create two unequal columns that floats next to each other */
+.column {
+ float: left;
+ padding: 10px;
+ height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+ width: 25%;
+}
+
+.right {
+ width: 75%;
+}
+
