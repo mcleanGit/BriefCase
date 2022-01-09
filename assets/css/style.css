@@ -75,7 +75,11 @@ h3 {
 }
 
 /* next steps */
-.section-box 
+.section-box {
+ height: 300px;
+ width: 100%;
+ columns: 25%, 75%;
+}
 /* boxes show unequal columns for About Me and Work sections */
 
 /* Create two unequal columns that floats next to each other */
