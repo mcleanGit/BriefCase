@@ -24,8 +24,11 @@ Design. The current design is based on a requisite mock-up. Subsequent versions 
 Criteria and process. Expectations for the portfolio at this stage include developer name, photo/avatar, links to sections that provide a brief biographical note (About Me), samples of my work (Work), and contact information (Contact Me). These are navigational links. The Work section includes title images of applications. For Version-01 most of these are placeholder images and project names. They will be replaced with real applications as the portfolio is updated. The images are also stock placeholders at this time, as I continue to build a personal portfolio of suitable materials. In the Work section, as is typical, the first (currently pseudo) application receives a larger image. The Work images link to deployed applications. Again, these are placeholders at this time. The project includes preliminary efforts to ensure responsive layout, so that the page and site can be viewed on various screens and devices. These will be refined as the portfolio evolves.
 
 URL of deployed application goes here.
+current unfinished state
+https://mcleangit.github.io/BriefCase/
 
 URL of GitHub repository (BriefCase) to submit.
+https://github.com/mcleanGit/BriefCase/
 
 README: this file.
 
