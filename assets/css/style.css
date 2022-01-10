@@ -4,6 +4,7 @@
  box-sizing: border-box;
 }
 
+
 /* styles overall background and font family */
 body {
  background-color: lightsteelblue;
@@ -15,6 +16,7 @@ header {
  width: 100%;
  height: 90px;
  margin: 0;
+ 
 }
 /* styles title-box inside header bar and h1 */
 /* this now appears to be sufficient */
@@ -36,7 +38,7 @@ header h1 {
 /* several details to improve */
 header nav {
  float: right;
- width: 40%;
+ width: 30%;
  text-align: center;
  display: flex;
  flex-wrap: wrap;
@@ -45,55 +47,221 @@ header nav {
 }
 
  header nav a {
- font-size: 28px;
+ font-size: 24px;
  font-style: bold;
  text-decoration-line: underline;
  color: teal;
 }
 
+header nav a:hover {
+ text-shadow: none;
+ font-style: italic;
+}
+
 /* hero style start */
 .hero {
- height: 400px;
+ height: 200px;
  margin-top: 1px;
  background-size: cover;
  background-position: center;
  background-image: url("../images/frequency-hero.jpg");
 }
 
-h3 {
- float: right;
- margin: 300px 69px 20px auto;
- padding: 10px;
- height: 60px;
- width: 300px;
- position: relative;
- text-align: center;
- background-color: teal;
- color: #000;
- font-size: 32px;
- font-style: italic;
+/* styles hero subtitle box position and font */
+.hero h3 {
+  float: right;
+  margin: 130px 35px 20px auto;
+  padding: 10px;
+  height: 50px;
+  width: 250px;
+  text-align: center;
+  background-color: teal;
+  color: #000;
+  font-size: 24px;
+  font-style: italic;
+ }
+
+ /* starting over here */
+ /* main style start */
+ /* references entire main container */
+ main {
+   height: 800px;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   background-color: lightsteelblue;
+ }
+
+#about {
+  box-sizing: border-box;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  height: 120px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
 }
 
-/* next steps */
-.section-box {
- height: 300px;
+#about h2 {
+  box-sizing: border-box;
+  height: 100px;
+  width: 25%;
+  border-right: 4px solid blue;
+  font-size: 48px;
+  text-align: center;
+  display: flex;
+  display: inline-flex;
+  padding: 15px, 5px, 10px, 30px;
+  color: blue; 
+}
+
+#about p {
+  box-sizing: border-box;
+  height: 100px;
+  width: 75%;
+  float: right;
+  font-size: 14px;
+  margin: auto, 20px, auto, 0;
+  padding: 15px, 5px, auto, 35px;
+  border: 5px solid yellow;
+}
+
+#work {
+  box-sizing: border-box;
+  height: 850px;
+  width: 100%;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  display: flex;
+  flex-direction: row;
+}
+
+#work h2 {
+  box-sizing: border-box;
+  height: 850px;
+  width: 25%;
+  border-right: solid blue 4px;
+  font-size: 48px;
+  text-align: center;
+  display: flex;
+  display: inline-flex;
+  padding: 15px, 5px, 10px, 30px;
+  color: blue;
+}
+
+#work div .container {
+  box-sizing: border-box;
+  height: 60px;
+  width: 100%;
+  border: 2px solid teal;
+}
+
+#work div img {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+
+/* comment out for now
+.img-surf {
+ height: 100px;
  width: 100%;
- columns: 25%, 75%;
-}
-/* boxes show unequal columns for About Me and Work sections */
+ flex: 1 50%;
+ border-style: 1px solid;
+ border-color: blue;
 
-/* Create two unequal columns that floats next to each other */
+}
+
+
+.work h3 {
+  float: left;
+  margin: auto, auto, 10px, 0px;
+  padding: 10px;
+  height: 50px;
+  width: 250px;
+  text-align: center;
+  background-color: teal;
+  color: #000;
+  font-size: 24px;
+  font-style: italic;
+}
+
+*/
+
+/* Create two unequal columns that floats next to each other
 .column {
  float: left;
  padding: 10px;
- height: 300px; /* Should be removed. Only for demonstration */
 }
+*/
+
+/* style for Contact Me quasi footer */
+#contact {
+  box-sizing: border-box;
+  height: 120px;
+  width: 100%;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  display: flex;
+  flex-direction: row;
+}
+
+#contact h2 {
+  box-sizing: border-box;
+  height: 120px;
+  width: 25%;
+  float: right;
+  border-right: solid blue 4px;
+  font-size: 48px;
+  text-align: center;
+  display: flex;
+  display: inline-flex;
+  padding: 15px, 5px, 10px, 30px;
+  color: blue; 
+}
+
+#contact nav {
+  box-sizing: border-box;
+  height: 120px;
+  float: right;
+  width: 75%;
+  border: 5px solid yellow;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px, 15px, 10px, 20px;
+  
+}
+
+#contact div nav a {
+  display:inline-flex;
+  text-align: center;
+  font-size: 24px;
+  font-style: bold;
+  text-decoration-line: underline;
+  text-decoration-color: blue;
+
+}
+
+#contact div nav a:hover {
+ text-shadow: none;
+ font-style: italic;
+}
+
+/* comment all */
+/* boxes show unequal columns for About Me and Work sections */
+/*  .column
+   float: left;
+  padding: 25px, 35px, 25px, 50px;
 
 .left {
  width: 25%;
+ border-right-color: blue;
+ padding: 25px, 10px, 25px, 40px;
 }
 
 .right {
  width: 75%;
+ padding: 25px, 35px, 25px, 15px;
 }
-
+*/

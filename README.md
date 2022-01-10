@@ -27,10 +27,7 @@ URL of deployed application goes here.
 
 URL of GitHub repository (BriefCase) to submit.
 
-README:
+README: this file.
 
-Description
+![picture of the coder in covid] (/assets/images/mclean.jpg "masked mclean")
 
-Screenshot of deployed URL and
-
-Link to URL
