@@ -29,5 +29,5 @@ URL of GitHub repository (BriefCase) to submit.
 
 README: this file.
 
-![picture of the coder in covid] (/assets/images/mclean.jpg "masked mclean")
+![picture of the coder in covid] (.mcleanGit/BriefCase/main/images/mclean.jpg)
 
