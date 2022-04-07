@@ -1,16 +1,16 @@
 * {
- box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 
 /* styles overall background and font family */
-body { 
- margin: 0;
- padding: 0;
- background-color: lightsteelblue;
- font-family: Helvetica, Arial, sans-serif;
- line-height: 1.5;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: lightsteelblue;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.5;
 }
+
 /* styles header */
 header {
   display: flex;
@@ -18,63 +18,63 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
- background-color: #000;
+  background-color: #000;
 }
+
 /* styles title-box inside header bar and h1 */
-/* this now appears to be sufficient */
 header h1 {
- font-size: 42px;
- color: #000;
- text-decoration: none;
- background-color: teal;
-/* padding around h1 title */
- padding: 10px 10px 10px 35px;
- /* margin around h1 title-box */
- margin: 0;
- line-height: 1;
+  font-size: 42px;
+  color: #000;
+  text-decoration: none;
+  background-color: teal;
+  /* padding around h1 title */
+  padding: 10px 10px 10px 35px;
+  /* margin around h1 title-box */
+  margin: 0;
+  line-height: 1;
 }
 
 /* styles contents of header nav bar and a */
-/* several details to improve */
 header nav {
- display: flex;
- flex-wrap: wrap;
- flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
- header nav a {
- font-size: 24px;
- font-style: bold;
- text-decoration-line: underline;
- color: teal;
- padding: 5px 10px;
- margin-right: 10px;
+header nav a {
+  font-size: 24px;
+  font-style: bold;
+  text-decoration-line: underline;
+  color: teal;
+  padding: 5px 10px;
+  margin-right: 10px;
 }
 
 header nav a:hover {
- text-shadow: none;
- font-style: italic;
- color: blue;
+  text-shadow: none;
+  font-style: italic;
+  color: blue;
 }
 
 /* hero style start */
 .hero {
- min-height: 30vh;
- margin-top: 1px;
- color: black;
- padding: 2% 6%;
- display: flex;
- justify-content: flex-end;
- align-items: flex-end;
- text-align: right;
- background-size: cover;
- background-position: center;
- background-image: url("../images/frequency-hero.jpg");
+  min-height: 30vh;
+  margin-top: 1px;
+  color: black;
+  padding: 2% 6%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/frequency-hero.jpg");
 }
+
 .hero div {
   flex: 0 0 90%;
-
 }
+
 /* styles hero subtitle box position and font */
 .hero h3 {
   margin: 0;
@@ -85,15 +85,14 @@ header nav a:hover {
   font-size: 24px;
   font-style: italic;
   display: inline;
- }
+}
+/* style hero end */
 
- /* starting over here */
- /* main style start */
- /* references entire main container */
- main {
+/* styles main and section-area classes */
+main {
   margin: 20px auto 45px auto;
   max-width: 89%;
- }
+}
 
 .section-area {
   display: flex;
@@ -114,14 +113,16 @@ header nav a:hover {
   line-height: 1.1;
 }
 
-.section-area > div {
+.section-area>div {
   flex: 0 0 77%;
 }
 
+/* styles p for About Me section */
 .section-area p {
   margin-bottom: 20px;
 }
 
+/* styles container for work section box-items */
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -143,7 +144,7 @@ header nav a:hover {
   background-size: 150%;
 }
 
-.box-items:first-child  {
+.box-items:first-child {
   min-height: 400px;
   flex-basis: 100%;
 }
@@ -151,16 +152,18 @@ header nav a:hover {
 .box-items:hover {
   background-color: teal;
 }
+
 .box-items div {
   background-color: azure;
   padding: 8px 10px;
 }
 
+/* h3 for project names */
 .box-items h3 {
   font-size: 1.6rem;
 }
 
-
+/* styles contact address section */
 .contact address {
   display: flex;
   flex-wrap: wrap;
@@ -179,21 +182,19 @@ header nav a:hover {
   color: blue;
 }
 
-/* load images */
+/* load project images */
+/* need to change the projects at this point */
+/* Projects: aCHORDingly, PickUpSports, assignments... */
+/* assignments: NoteTaker, Scheduler, SecGen-, ?readmegen
 .project1 {
   background-image: url("../images/Surf.jpg");
+  cool image but re Project 3 MERN -- not yet
 }
 
 /* projects .. */
 
-/* Create two unequal columns that floats next to each other
-.column {
- float: left;
- padding: 10px;
-}
-*/
 
-/* style for Contact Me quasi footer */
+/* style for Contact Me section quasi footer */
 #contact {
   box-sizing: border-box;
   height: 120px;
@@ -215,7 +216,7 @@ header nav a:hover {
   display: flex;
   display: inline-flex;
   padding: 15px, 5px, 10px, 30px;
-  color: blue; 
+  color: blue;
 }
 
 #contact nav {
@@ -228,11 +229,11 @@ header nav a:hover {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 10px, 15px, 10px, 20px;
-  
+
 }
 
 #contact div nav a {
-  display:inline-flex;
+  display: inline-flex;
   text-align: center;
   font-size: 24px;
   font-style: bold;
@@ -242,25 +243,8 @@ header nav a:hover {
 }
 
 #contact div nav a:hover {
- text-shadow: none;
- font-style: italic;
+  text-shadow: none;
+  font-style: italic;
 }
 
-/* comment all */
-/* media queries to copy */
-/* boxes show unequal columns for About Me and Work sections */
-/*  .column
-   float: left;
-  padding: 25px, 35px, 25px, 50px;
-
-.left {
- width: 25%;
- border-right-color: blue;
- padding: 25px, 10px, 25px, 40px;
-}
-
-.right {
- width: 75%;
- padding: 25px, 35px, 25px, 15px;
-}
-*/
+/* add media queries to end of css */
