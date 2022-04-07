@@ -1,49 +1,45 @@
 * {
- margin: 0;
- padding: 0;
  box-sizing: border-box;
 }
 
 
 /* styles overall background and font family */
-body {
+body { 
+ margin: 0;
+ padding: 0;
  background-color: lightsteelblue;
  font-family: Helvetica, Arial, sans-serif;
+ line-height: 1.5;
 }
 /* styles header */
 header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
  background-color: #000;
- width: 100%;
- height: 90px;
- margin: 0;
- 
 }
 /* styles title-box inside header bar and h1 */
 /* this now appears to be sufficient */
 header h1 {
- width: 246px;
  font-size: 42px;
  color: #000;
- float: left;
- text-align: right;
  text-decoration: none;
  background-color: teal;
 /* padding around h1 title */
  padding: 10px 10px 10px 35px;
  /* margin around h1 title-box */
- margin: 10px auto 10px 0px;
+ margin: 0;
+ line-height: 1;
 }
 
 /* styles contents of header nav bar and a */
 /* several details to improve */
 header nav {
- float: right;
- width: 30%;
- text-align: center;
  display: flex;
  flex-wrap: wrap;
- justify-content: space-between;
- margin: 32px 60px 5px auto;
+ flex-direction: row;
 }
 
  header nav a {
@@ -51,142 +47,144 @@ header nav {
  font-style: bold;
  text-decoration-line: underline;
  color: teal;
+ padding: 5px 10px;
+ margin-right: 10px;
 }
 
 header nav a:hover {
  text-shadow: none;
  font-style: italic;
+ color: blue;
 }
 
 /* hero style start */
 .hero {
- height: 200px;
+ min-height: 30vh;
  margin-top: 1px;
+ color: black;
+ padding: 2% 6%;
+ display: flex;
+ justify-content: flex-end;
+ align-items: flex-end;
+ text-align: right;
  background-size: cover;
  background-position: center;
  background-image: url("../images/frequency-hero.jpg");
 }
+.hero div {
+  flex: 0 0 90%;
 
+}
 /* styles hero subtitle box position and font */
 .hero h3 {
-  float: right;
-  margin: 130px 35px 20px auto;
-  padding: 10px;
-  height: 50px;
-  width: 250px;
-  text-align: center;
+  margin: 0;
+  padding: 5px 10px;
+  line-height: 1.2;
   background-color: teal;
   color: #000;
   font-size: 24px;
   font-style: italic;
+  display: inline;
  }
 
  /* starting over here */
  /* main style start */
  /* references entire main container */
  main {
-   height: 800px;
-   width: 100%;
-   display: flex;
-   flex-direction: column;
-   background-color: lightsteelblue;
+  margin: 20px auto 45px auto;
+  max-width: 89%;
  }
 
-#about {
-  box-sizing: border-box;
-  margin-top: 4px;
-  margin-bottom: 4px;
-  height: 120px;
-  width: 100%;
+.section-area {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 25px 0;
+  padding: 10px 0;
 }
 
-#about h2 {
-  box-sizing: border-box;
-  height: 100px;
-  width: 25%;
+.section-area h2 {
+  flex: 0 0 20%;
+  text-align: right;
+  padding-right: 15px;
   border-right: 4px solid blue;
   font-size: 48px;
-  text-align: center;
+  line-height: 1.1;
+}
+
+.section-area > div {
+  flex: 0 0 77%;
+}
+
+.section-area p {
+  margin-bottom: 20px;
+}
+
+.container {
   display: flex;
-  display: inline-flex;
-  padding: 15px, 5px, 10px, 30px;
-  color: blue; 
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-#about p {
-  box-sizing: border-box;
-  height: 100px;
-  width: 75%;
-  float: right;
-  font-size: 14px;
-  margin: auto, 20px, auto, 0;
-  padding: 15px, 5px, auto, 35px;
-  border: 5px solid yellow;
-}
-
-#work {
-  box-sizing: border-box;
-  height: 850px;
-  width: 100%;
-  margin-top: 4px;
-  margin-bottom: 4px;
-  display: flex;
-  flex-direction: row;
-}
-
-#work h2 {
-  box-sizing: border-box;
-  height: 850px;
-  width: 25%;
+.box-items {
   border-right: solid blue 4px;
-  font-size: 48px;
-  text-align: center;
+  min-height: 150px;
+  max-height: 150px;
+  font-size: 0.9rem;
+  background-color: whitesmoke;
+  flex-basis: calc(50% - 1em);
+  align-items: flex-end;
   display: flex;
-  display: inline-flex;
-  padding: 15px, 5px, 10px, 30px;
+  padding: 0 0 20px 0;
+  margin: 0.5em;
+  color: blue;
+  background-size: 150%;
+}
+
+.box-items:first-child  {
+  min-height: 400px;
+  flex-basis: 100%;
+}
+
+.box-items:hover {
+  background-color: teal;
+}
+.box-items div {
+  background-color: azure;
+  padding: 8px 10px;
+}
+
+.box-items h3 {
+  font-size: 1.6rem;
+}
+
+
+.contact address {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.contact address a {
+  display: inline-block;
+  /* padding etc */
+}
+
+.contact address a:hover {
+  background-size: 100% 100%;
   color: blue;
 }
 
-#work div .container {
-  box-sizing: border-box;
-  height: 60px;
-  width: 100%;
-  border: 2px solid teal;
+/* load images */
+.project1 {
+  background-image: url("../images/Surf.jpg");
 }
 
-#work div img {
-  width: 80%;
-  text-align: center;
-  margin: auto;
-}
-
-/* comment out for now
-.img-surf {
- height: 100px;
- width: 100%;
- flex: 1 50%;
- border-style: 1px solid;
- border-color: blue;
-
-}
-
-
-.work h3 {
-  float: left;
-  margin: auto, auto, 10px, 0px;
-  padding: 10px;
-  height: 50px;
-  width: 250px;
-  text-align: center;
-  background-color: teal;
-  color: #000;
-  font-size: 24px;
-  font-style: italic;
-}
-
-*/
+/* projects .. */
 
 /* Create two unequal columns that floats next to each other
 .column {
@@ -249,6 +247,7 @@ header nav a:hover {
 }
 
 /* comment all */
+/* media queries to copy */
 /* boxes show unequal columns for About Me and Work sections */
 /*  .column
    float: left;
