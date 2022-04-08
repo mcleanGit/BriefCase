@@ -164,6 +164,21 @@ main {
   font-size: 1.6rem;
 }
 
+.project1 {
+  background-image: url(../images/aCHORDingly.jpg);
+}
+.project2 {
+  background-image: url(../images/PickUpSports.jpg);
+}
+.project3 {
+  background-image: url(../images/NoteTaker.jpg);
+}
+.project4 {
+  background-image: url(../images/aCHORDingly.jpg);
+}
+.project5 {
+  background-image: url(../images/aCHORDingly.jpg);
+}
 /* styles contact address section */
 .contact address {
   display: flex;
@@ -197,7 +212,7 @@ main {
 
 
 /* style for Contact Me section quasi footer */
-#contact {
+/* #contact {
   box-sizing: border-box;
   height: 120px;
   width: 100%;
