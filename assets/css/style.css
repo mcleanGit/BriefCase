@@ -44,7 +44,7 @@ header nav {
 header nav a {
   font-size: 24px;
   font-style: bold;
-  text-decoration-line: underline;
+  text-decoration: none;
   color: teal;
   padding: 5px 10px;
   margin-right: 10px;
@@ -142,6 +142,7 @@ main {
   margin: 0.5em;
   color: blue;
   background-size: 150%;
+  text-decoration: none;
 }
 
 .box-items:first-child {
@@ -168,6 +169,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  text-decoration: none;
   align-items: center;
   height: 100%;
 }
