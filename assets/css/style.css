@@ -103,7 +103,7 @@ main {
   margin: 25px 0;
   padding: 10px 0;
 }
-
+/* h2 for About Work Contact left-margin headers */
 .section-area h2 {
   flex: 0 0 20%;
   text-align: right;
@@ -134,7 +134,7 @@ main {
   min-height: 150px;
   max-height: 150px;
   font-size: 0.9rem;
-  background-color: whitesmoke;
+  background-color: azure;
   flex-basis: calc(50% - 1em);
   align-items: flex-end;
   display: flex;
@@ -144,7 +144,7 @@ main {
   background-size: 150%;
   text-decoration: none;
 }
-
+/* styles larger first-item project */
 .box-items:first-child {
   min-height: 400px;
   flex-basis: 100%;
@@ -163,7 +163,7 @@ main {
 .box-items h3 {
   font-size: 1.6rem;
 }
-
+/* provides background images for projects */
 .project1 {
   background-image: url(../images/aCHORDingly.jpg);
 }
@@ -174,94 +174,37 @@ main {
   background-image: url(../images/NoteTaker.jpg);
 }
 .project4 {
-  background-image: url(../images/aCHORDingly.jpg);
+  background-image: url(../images/scheduler.jpg);
 }
 .project5 {
-  background-image: url(../images/aCHORDingly.jpg);
+  background-image: url(../images/calculator.jpg);
 }
-/* styles contact address section */
+/* styles contact address div */
 .contact address {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   text-decoration: none;
+  font-style: none;
   align-items: center;
   height: 100%;
 }
 
 .contact address a {
   display: inline-block;
-  /* padding etc */
+  padding: 8px 10px;
+  font-size: 20px;
+  color: teal;
+  font-style: none;
+  text-decoration: none;
 }
 
 .contact address a:hover {
   background-size: 100% 100%;
-  color: blue;
-}
-
-/* load project images */
-/* need to change the projects at this point */
-/* Projects: aCHORDingly, PickUpSports, assignments... */
-/* assignments: NoteTaker, Scheduler, SecGen-, ?readmegen
-.project1 {
-  background-image: url("../images/Surf.jpg");
-  cool image but re Project 3 MERN -- not yet
-}
-
-/* projects .. */
-
-
-/* style for Contact Me section quasi footer */
-/* #contact {
-  box-sizing: border-box;
-  height: 120px;
-  width: 100%;
-  margin-top: 4px;
-  margin-bottom: 4px;
-  display: flex;
-  flex-direction: row;
-}
-
-#contact h2 {
-  box-sizing: border-box;
-  height: 120px;
-  width: 25%;
-  float: right;
-  border-right: solid blue 4px;
-  font-size: 48px;
-  text-align: center;
-  display: flex;
-  display: inline-flex;
-  padding: 15px, 5px, 10px, 30px;
-  color: blue;
-}
-
-#contact nav {
-  box-sizing: border-box;
-  height: 120px;
-  float: right;
-  width: 75%;
-  border: 5px solid yellow;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 10px, 15px, 10px, 20px;
-
-}
-
-#contact div nav a {
-  display: inline-flex;
-  text-align: center;
-  font-size: 24px;
-  font-style: bold;
-  text-decoration-line: underline;
-  text-decoration-color: blue;
-
-}
-
-#contact div nav a:hover {
   text-shadow: none;
   font-style: italic;
+  color: blue;
 }
 
 /* add media queries to end of css */
+/* currently working OK with flex styling */
